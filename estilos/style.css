@@ -13,6 +13,27 @@
     --light-magenta: hsl(300, 24%, 96%);
 }
 
+.main--background-img {
+    position: relative;
+}
+
+.main--background-img--top {
+    position: absolute;
+    width: 475px;
+    height: 365px;
+    top: -100px;
+    left: -30px; 
+
+}
+
+.main--background-img--bottom {
+    position: absolute;
+    width: 410px;
+    height: 484px;
+    top: 930px;
+    left: -20px; 
+}
+
 .main--info h1 {
     min-width: 300px;
     width: 70%;
