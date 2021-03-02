@@ -1,59 +1,75 @@
+
 main {
     display: grid;
-    grid-template-columns: 513px minmax(525px, 760px);
-    grid-template-rows:  1fr;
+    grid-template-columns: repeat(2, minmax(461px,564px));
+    height: 100vh;
+    margin: 0;
+    place-items: stretch;
     justify-content: center;
-    padding-top: 50px;
 }
  
 .main--background-img {
     position: absolute;
+    max-width: 1440px;
 }
 
 .main--background-img--top {
-    background-image: url();
+    background-image: url(../assets/bg-pattern-top-desktop.svg);
     position: absolute;
-    width: 405px;
-    height: 255px;
-    top: -80px;
-    left: -30px; 
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 595px;
+    height: 370px;
+    top: 0;
+    left: 0; 
 }
 
 .main--background-img--bottom {
+    background-image: url(../assets/bg-pattern-bottom-desktop.svg);
     position: absolute;
-    width: 415px;
-    height: 510px;
-    top: 815px;
-    left: -20px; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 1265px;
+    height: 780px;
+    top: 120px;
+    left: 175px; 
 }
  
 .main--info {
-    margin-top: -65px;
+    grid-column: 1 /2;
+    grid-row: 1 /2;
 }
 
 .div-main--info {
     display: flex;
     flex-direction: column;
-    width: 470px;
-    
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
 }
 
 .div-main--info h1 {
     text-align: left;
-    line-height: 3rem;
-    margin-left: 55px
+    line-height: 4rem;
+    font-size: 4rem;
+    margin: 0 0 0 -80px;
 }
 
 .div-main--info p {
     text-align: left;
-    margin-left: 55px;
+    width: 85%;
+    margin: 0 0 0 0 ;
 }
 
-.section--star-rating {  
-    width: 80%;
-    max-width: 450px;
-    
+.section--star-rating { 
+    margin: 5px 0 0 0; 
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-content: center;
+    gap: 10px;
 }
 
 .section--star-rating--item {
@@ -83,15 +99,14 @@ main {
 }
 
 .section--feedback {
-    display: flex;
-    max-width: 1150px;
-    width: 90%;
-    height: 280px;
-    grid-column: 1 / 4;
+    max-width: 1440px;
+    height: 70%;
+    width: 91%;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
     flex-direction: row;
-    margin-top: 15px;
     gap: 20px;
-    margin-bottom: 60px;
+    margin: -55px 0 0 40px; 
 }
 
 .section--feedback-article--card {
